@@ -2,7 +2,7 @@
 layout: post
 title: "October 2018 Meeting Recap"
 description: "The Smart Sea Level Sensors project team hosted their second public forum to share how CEMA officials, City of Savannah officials, and Georgia Tech scientists and engineers are working together to install a network of internet-enabled sea level sensors across Chatham County. The real-time data on coastal flooding will be used to create tools for emergency planning and response."
-image: "https://www.sealevelsensors.org/static/img/events/oct-2018-meeting/oct-meeting.jpg"
+image: "/img/events/oct-2018-meeting/oct-meeting.jpg"
 date: 2018-10-26
 location: "Georgia Tech Savannah"
 documents:

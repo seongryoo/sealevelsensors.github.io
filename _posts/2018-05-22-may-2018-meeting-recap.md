@@ -2,7 +2,7 @@
 layout: post
 title: "May 2018 Meeting Recap"
 description: "The Smart Sea Level Sensors team had their first project meeting to discuss emergency response and planning, sensor technology, and community engagement."
-image: "https://www.sealevelsensors.org/static/img/events/may-2018-meeting/may-meeting.jpg"
+image: "/img/events/may-2018-meeting/may-meeting.jpg"
 date: 2018-05-22
 location: "Savannah Morning News Building"
 permalink: /news/:slug
