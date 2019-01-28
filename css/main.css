@@ -1,0 +1,428 @@
+/*General*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Header*/
+.header {
+  padding: 24px;
+}
+
+.header .overflow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 180px;
+}
+
+.header .nav {
+  display: none;
+}
+
+.header .nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.header .nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav ul::-webkit-scrollbar {
+ display: none;
+}
+
+.header .nav li {
+  color: #202932;
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 64px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.header .nav li a,
+.header .nav li a:hover,
+.header .nav li a:visited {
+  color: #202124;
+  text-decoration: none;
+}
+
+.header .nav li + li {
+  margin-left: 32px;
+}
+
+.header .nav li.active {
+  border-bottom: 2px solid #FF8000;
+  padding-bottom: 4px;
+}
+
+@media (min-width: 600px) {
+  .header .nav {
+    display: flex;
+  }
+}
+
+/*Hero*/
+.hero {
+  position: relative;
+  background-color: black;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 96px 0;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.hero h1 {
+  color: #fff;
+  font-family: 'Arimo', sans-serif;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.hero .btn-cta,
+.hero .btn-cta:hover {
+  display: inline-block;
+  margin-right: 32px;
+  margin-bottom: 16px;
+  background-color: rgba(255,255,255,0.9);
+  color: #002D59;
+}
+
+@media (min-width: 992px) {
+  .hero .content {
+    max-width: 58%;
+  }
+}
+
+/*Section*/
+.section {
+  color: #333E4A;
+  padding: 48px 0;
+}
+
+.section h2 {
+  color: #202932;
+  font-family: 'Arimo', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section h3 {
+  color: #202932;
+  font-family: 'Arimo', sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.section h4 {
+  color: #202932;
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.section p {
+  color: #333E4A;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.section a:hover {
+  text-decoration: none;
+}
+
+.section .card {
+  border: none;
+  box-shadow: 0 16px 48px rgba(32,41,50,0.12);
+}
+
+.section .card p {
+  margin-bottom: 0;
+}
+
+.section .show-more {
+  margin-top: 56px;
+  text-align: center;
+}
+
+.btn-cta,
+.btn-cta:hover {
+  background: #002D59;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px rgba(0,40,91,0.24);
+  display: inline-block;
+  color: #fff;
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.1px;
+  line-height: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
+.col-md-4 + .col-md-4 {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 + .col-md-4 {
+    margin-top: 0;
+  }
+}
+
+/*News*/
+.news .row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.news .row > div[class*='col-'] {
+  display: flex;
+}
+
+.news .col-md-4 {
+  margin-bottom: 24px;
+}
+
+.featured .col-md-3 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.featured img {
+  max-height: 40px;
+}
+
+/*Footer*/
+.footer {
+  background-color: #1E2832;
+  padding: 48px 0;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 32px;
+}
+
+.footer li a,
+.footer li a:visited {
+  color: #889BB0;
+}
+
+.footer li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Post*/
+.post h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.post figcaption {
+  color: #889BB0;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.post .documents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.post .documents li {
+  padding: 20px;
+  background-color: #fafafa;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/*Partners*/
+.partners h2 {
+  margin-bottom: 0;
+}
+
+.partners h3 {
+  margin-bottom: 32px;
+}
+
+.partner {
+  padding: 48px 0;
+}
+
+.funders img {
+  width: 50%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+/*FAQ*/
+.faq .question {
+  color: #202932;
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px;
+  margin: 0;  
+}
+
+/*Events*/
+.events .upcoming .row,
+.events .past .row {
+  margin-top: 32px;
+}
+
+.events .upcoming a,
+.events .past a {
+  font-weight: 700;
+}
+
+.events .date-box-prefix {
+  text-align: center;
+  max-width: 64px;
+  color: #889BB0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.events .date-box {
+  border: 1px solid #889BB0;
+  max-width: 64px;
+  padding: 5px;
+}
+
+.events .date-box h3, 
+.events .date-box h5 {
+  color: #889BB0;
+  text-align: center;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  text-transform: uppercase;
+}
+
+.events .datebox h3 {
+  font-size: 1.414em;
+  font-weight: 400;
+}
+
+.events .date-box h5 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.events .event-title {
+  font-weight: 700;
+}
+
+.events .event-title,
+.events .event-time,
+.events .event-description {
+  margin-bottom: 5px;
+}
+
+.events .date-box-prefix {
+  margin: 0 0 10px 0;
+}
+
+.events .date-box {
+  margin: 0 0 15px 0;
+}
+
+@media (min-width: 768px) {
+  .events .date-box-prefix {
+    margin: 0 auto 10px auto;
+  }
+
+  .events .date-box {
+    margin: 0 auto;
+  }   
+}
+
+/*CTA*/
+.cta {
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+.cta .newsletter {
+  padding-right: 40px;
+  border-right: 1px solid #889BB0;
+}
+
+.cta .newsletter h3 {
+  margin-bottom: 20px;
+}
+
+.cta .network {
+  padding-left: 20px;
+}
+
+.cta input[type=email] {
+  padding: 24px 14px;
+  font-size: 1em;
+  outline: none;
+  border-radius: 0;
+}
+
+.cta input[type=submit] {
+  cursor: pointer;
+}
+
+#mc_embed_signup {
+  clear: left; 
+}

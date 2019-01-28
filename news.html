@@ -1,0 +1,78 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+
+{% include header.html %}
+
+<div class="news section">
+  <div class="container">
+    <h2>News</h2>
+    <div class="row">
+      {% for post in site.posts %}
+      <div class="col-md-4">
+        <div class="card">
+          {% if post.external %}
+          <a href="{{ post.external }}" target="_blank">
+          {% else %}
+          <a href="{{ post.url }}">
+          {% endif %}
+            <img class="card-img" src="{{ post.image }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{ post.title }}</h4>
+            </div>
+          </a>     
+        </div> 
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="featured section">
+  <div class="container">
+    <h2>Featured in</h2>
+    <div class="row justify-content-md-center">
+      <div class="col-md-3">
+        <a href="https://www.ajc.com/news/floods-fire-and-hurricanes-dire-warnings-climate-report/tRIryABBG6T2yOeKHBzBxM/" target="_blank">
+          <img src="/img/featured/ajc.svg" alt="Atlanta Journal-Constitution logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="http://www.gpbnews.org/post/what-national-climate-assessment-means-rural-coastal-georgia" target="_blank">
+          <img src="/img/featured/gpb.png" alt="Georgia Public Broadcasting logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.flipsnack.com/Richmondhillreflectionsmag/v14n3-all-pgs-low-res-final-1-print.html?p=32" target="_blank">
+          <img src="/img/featured/richmond-hill-reflections-logo.png" alt="Richmond Hill Reflections logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.google.com/search?q=site%3Ahttps%3A%2F%2Fwww.savannahnow.com%2F+%22Smart+Sea+Level+Sensors%22+OR+%22Georgia+Smart+Communities+Challenge%22&oq=site%3Ahttps%3A%2F%2Fwww.savannahnow.com%2F+%22Smart+Sea+Level+Sensors%22+OR+%22Georgia+Smart+Communities+Challenge%22" target="_blank">
+          <img src="/img/featured/savannah-now-logo.png" alt="Savannah Morning News logo">
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-3">
+        <a href="https://www.savannahbusinessjournal.com/news-categories/68-state-regional-news/8372-aug-21-smart-sea-level-tools-for-emergency-response-planning-installed-as-part-of-smart-communities-collaboration.html" target="_blank">
+          <img src="/img/featured/sbj-logo.png" alt="Savannah Business Journal logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.wsav.com/news/local-news/group-deploys-sea-level-sensor-program-to-get-ahead-of-the-storm/1390863505" target="_blank">
+          <img src="/img/featured/wsav-logo.png" alt="WSAV logo">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="https://www.wsbtv.com/video?videoId=844716486&videoVersion=1.0" target="_blank">
+          <img src="/img/featured/wsbtv-logo.png" alt="WSB-TV logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}

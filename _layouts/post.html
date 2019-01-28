@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="post section">
+  <div class="container">
+    <div class="row">
+      <div class="recap col-md-8">
+        <h2>{{ page.title }}</h2>
+        {{ page.content }}
+      </div>
+
+      {% if page.documents %}
+      <div class="documents col-md-4">
+        <h2>Documents</h2>
+        <ul>
+          {% for document in page.documents %}
+            <li><a href="{{ document.link }}" target="_blank">{{ document.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}

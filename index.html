@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="hero">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="/img/hero/dock.jpg">
+    <source src="/img/hero/dock.webm" type="video/webm">
+    <source src="/img/hero/dock.mp4" type="video/mp4">
+  </video>
+  
+  <div class="container h-100">
+    <div class="d-flex h-100">
+      <div class="w-70 text-white">
+        <h1>Smart sea level sensors in Chatham County, GA</h1>
+        <p>The Smart Sea Level Sensors project is a partnership between Chatham Emergency Management Agency officials, City of Savannah officials, and Georgia Tech scientists and engineers who are working together to install a network of internet-enabled sea level sensors across Chatham County. The real-time data on coastal flooding will be used for emergency planning and response.</p>
+        <div class="learn-more">
+          <a href="https://www.youtube.com/watch?v=0NFji1boobQ" target="_blank" class="btn-cta">Watch the video</a>
+          <a href="/news/october-2018-meeting-recap" class="btn-cta">Get the latest</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news section">
+  <div class="container">
+    <h2>News</h2>
+    <div class="row">
+      {% for post in site.posts %}
+      {% if forloop.index <= 3 %}
+      <div class="col-md-4">
+        <div class="card">
+          {% if post.external %}
+          <a href="{{ post.external }}" target="_blank">
+          {% else %}
+          <a href="{{ post.url }}">
+          {% endif %}
+            <img class="card-img" src="{{ post.image }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{ post.title }}</h4>
+            </div>
+          </a>     
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="show-more">
+      <a href="/news/" class="btn-cta">See all news</a>
+    </div>
+  </div>
+</div>
+
+<div class="events section">
+  <div class="container">
+    <h2>Events</h2>
+
+    <div class="row">
+      <div class="upcoming col-md-6">
+        <h3>Upcoming</h3>
+        <div class="row">
+          <div class="col-md-2 event-date">
+            <h5 class="date-box-prefix">Tue</h5>
+            <div class="date-box">
+              <h5>Jan</h5>
+              <h3>29</h3>
+            </div>
+          </div>
+          <div class="col-md-10 event-body">
+            <h4 class="event-title">January 2019 Meeting</h4>
+            <p class="event-time">Coastal Georgia Center</p>
+            <p class="event-description">We will have our third public meeting to discuss project updates and answer questions.</p>
+            <p style="margin-bottom: 0"><a href="https://www.eventbrite.com/e/smart-sea-level-sensor-meeting-tickets-53911480690" target="_blank">Learn more</a></p>  
+          </div>
+        </div>
+      </div>
+      <div class="past col-md-6">
+        <h3>Past</h3>
+        <div class="row">
+          <div class="col-md-2 event-date">
+            <h5 class="date-box-prefix">Fri</h5>
+            <div class="date-box">
+              <h5>Oct</h5>
+              <h3>26</h3>
+            </div>
+          </div>
+          <div class="col-md-10 event-body">
+            <h4 class="event-title">October 2018 Meeting</h4>
+            <p class="event-time">9:00 AM - 10:30 PM, Georgia Tech Savannah</p>
+            <p class="event-description">We had our second public meeting to discuss project updates and answer questions.</p>  
+            <p style="margin-bottom: 0"><a href="/news/october-2018-meeting-recap">View recap</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="show-more">
+      <a href="/events/" class="btn-cta">See all events</a>
+    </div>
+  </div>
+</div>
+
+{% include newsletter.html %}
+
+{% include footer.html %}
