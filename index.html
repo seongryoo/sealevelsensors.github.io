@@ -26,6 +26,54 @@ layout: default
 
 <div class="news section">
   <div class="container">
+    <h2>In the news</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a href="https://www.savannahnow.com/news/20190130/chatham-county-sea-level-sensor-project-seeks-input" target="_blank">
+            <img class="card-img-top" src="/img/featured/chatham-county-sea-level-sensor-project-seeks-input.jpg" alt="Yards on Kilkenny Creek in Richmond Hill flooded Nov. 23 with little warning">
+            <div class="card-body">
+              <img class="source" src="/img/featured/savannah-now-logo.png" alt="Savannah Now logo">
+              <h4 class="card-title">Chatham County sea level sensor project seeks input</h4>
+              <p class="sub"><span class="date">Jan 30, 2019</span></p>
+            </div>
+          </a>
+        </div> 
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <a href="https://www.ajc.com/news/floods-fire-and-hurricanes-dire-warnings-climate-report/tRIryABBG6T2yOeKHBzBxM/" target="_blank">
+            <img class="card-img-top" src="/img/featured/climate-change-report-contains-grim-forecast-for-georgia.jpg" alt="Boats along with sections of dock are scattered in the marsh, some sitting on the bottom, after Hurricane Irma on Tuesday, September 12, 2017, at St. Marys on the Georgia coast.">
+            <div class="card-body">
+              <img class="source" src="/img/featured/ajc.svg" alt="AJC logo">
+              <h4 class="card-title">Floods, fire and hurricanes: Dire warnings for Georgia in climate report</h4>
+              <p class="sub"><span class="date">Dec 1, 2018</span></p>
+            </div>
+          </a>
+        </div> 
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="http://www.gpbnews.org/post/what-national-climate-assessment-means-rural-coastal-georgia" target="_blank">
+            <img class="card-img-top" src="/img/featured/what-national-climate-assessment-means-rural-coastal-georgia.jpg" alt="According to the National Climate Assessment, climate change could result in more extreme precipitation events like Hurricane Michael, which razed farmland across south Georgia in October.">
+            <div class="card-body">
+              <img class="source" src="/img/featured/gpb.png" alt="GPB logo">
+              <h4 class="card-title">What The National Climate Assessment Means For Rural, Coastal Georgia</h4>
+              <p class="sub"><span class="date">Nov 27, 2018</span></p>
+            </div>
+          </a>
+        </div> 
+      </div>
+    </div>
+    <div class="show-more">
+      <a href="/news/" class="btn-cta">See all news</a>
+    </div>
+  </div>
+</div>
+
+<div class="news section">
+  <div class="container">
     <h2>Project updates</h2>
     <div class="row">
       {% for post in site.posts %}
@@ -48,7 +96,7 @@ layout: default
       {% endfor %}
     </div>
     <div class="show-more">
-      <a href="/news/" class="btn-cta">See all news</a>
+      <a href="/news/#project-updates" class="btn-cta">See all project updates</a>
     </div>
   </div>
 </div>
