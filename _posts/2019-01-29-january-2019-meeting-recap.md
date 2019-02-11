@@ -8,6 +8,8 @@ location: "Georgia Tech Savannah"
 documents:
   - title: Project Overview - Kim Cobb
     link: /pdf/jan-2019-meeting/Project-Overview_Kim-Cobb.pdf
+  - title: Sensor Deployment Updates - Russ Clark
+    link: /pdf/jan-2019-meeting/Sensor-Deployment-Updates_Russ-Clark.pdf
   - title: Sea Level Rise Curriculum - Jayma Koval
     link: /pdf/jan-2019-meeting/Sea-Level-Rise-Curriculum_Jayma-Koval.pdf
   - title: Tools and Visualizations - Lalith Polepeddi
