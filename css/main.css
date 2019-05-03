@@ -437,3 +437,23 @@ body {
 #mc_embed_signup {
   clear: left; 
 }
+
+/*Banner*/
+.banner {
+  background-color: #002D59;
+  color: #fff;
+  padding: 8px 0;
+}
+
+.banner p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 0.9em;
+  margin: 0;
+  text-align: center;
+}
+
+.banner a,
+.banner a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
