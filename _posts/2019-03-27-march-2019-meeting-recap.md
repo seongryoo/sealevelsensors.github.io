@@ -10,7 +10,7 @@ documents:
     link: https://youtu.be/40iREhc8OOg
   - title: Project Overview - Kim Cobb
     link: /pdf/mar-2019-meeting/Project-Overview_Kim-Cobb.pdf
-permalink: /news/:slug
+permalink: /news/:slug/
 ---
 
 <figure class="figure">

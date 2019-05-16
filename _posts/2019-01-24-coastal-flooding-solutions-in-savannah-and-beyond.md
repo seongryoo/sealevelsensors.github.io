@@ -7,7 +7,7 @@ date: 2019-01-24
 documents:
   - title: Webinar slides
     link: http://smartcities.ipat.gatech.edu/sites/default/files/GA-Smart-Webinar_Smart-Sea-Level-Sensors_1-24-2019.pdf
-permalink: /news/:slug
+permalink: /news/:slug/
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

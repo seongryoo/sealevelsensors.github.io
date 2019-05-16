@@ -5,7 +5,7 @@ description: "The Smart Sea Level Sensors team had their first project meeting t
 image: "/img/events/may-2018-meeting/may-meeting.jpg"
 date: 2018-05-22
 location: "Savannah Morning News Building"
-permalink: /news/:slug
+permalink: /news/:slug/
 ---
 
 <figure class="figure">

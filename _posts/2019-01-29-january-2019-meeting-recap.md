@@ -14,7 +14,7 @@ documents:
     link: /pdf/jan-2019-meeting/Sea-Level-Rise-Curriculum_Jayma-Koval.pdf
   - title: Tools and Visualizations - Lalith Polepeddi
     link: /pdf/jan-2019-meeting/Tools-and-Visualizations_Lalith-Polepeddi.pdf
-permalink: /news/:slug
+permalink: /news/:slug/
 ---
 
 <figure class="figure">

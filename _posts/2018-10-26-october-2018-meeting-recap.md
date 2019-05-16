@@ -12,7 +12,7 @@ documents:
     link: /pdf/oct-2018-meeting/Project-Overview_Kim-Cobb.pdf
   - title: Sensor and Gateway Deployment Updates - Russ Clark
     link: /pdf/oct-2018-meeting/Sensor-and-Gateway-Deployment-Updates_Russ-Clark.pdf
-permalink: /news/:slug
+permalink: /news/:slug/
 ---
 
 <figure class="figure">

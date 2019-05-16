@@ -24,7 +24,7 @@ documents:
     link: /pdf/aug-2018-meeting/GT-Savannah.pdf
   - title: About Georgia Climate Project
     link: /pdf/aug-2018-meeting/Georgia-Climate-Project.pdf
-permalink: /news/:slug
+permalink: /news/:slug/
 ---
 
 <figure class="figure">
