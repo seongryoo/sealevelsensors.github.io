@@ -52,10 +52,10 @@ layout: default
   </div>
 </div>
 
-<div class="map section" id="map">
+<div class="map section" id="locations">
   <div class="container">
     <h2>We've installed <span id="numSensors"></span> sensors around Chatham County</h2>
-    <div id='lmap'></div>
+    <div id='map'></div>
   </div>
 </div>
 
@@ -100,7 +100,7 @@ layout: default
 mapboxgl.accessToken = 'pk.eyJ1IjoibHBvbGVwZWRkaSIsImEiOiJjazE1Z3c2MDkwdXY3M2h0Y2w2NWVuamlhIn0.fC-EAuhVfX3bTyEUEB0l8Q';
 
 let map = new mapboxgl.Map({
-  container: 'lmap', // container id
+  container: 'map', // container id
   style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
   center: [-81.1, 31.99], // starting position [lng, lat]
   zoom: 9.5 // starting zoom
@@ -133,7 +133,6 @@ map.on('load', function () {
     },
   })
     .then((response) => {
-      console.log('load');
       return response.json();
     })
     .then((data) => {
@@ -152,8 +151,6 @@ map.on('load', function () {
 
         layer.source.data.features.push(feature);
       }
-      
-      console.log(layer);
 
       map.addLayer(layer);
       return true;
