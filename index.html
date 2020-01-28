@@ -55,7 +55,7 @@ layout: default
 <div class="map section" id="map">
   <div class="container">
     <h2>We've installed <span id="numSensors"></span> sensors around Chatham County</h2>
-    <div id='map'></div>
+    <div id='lmap'></div>
   </div>
 </div>
 
@@ -100,7 +100,7 @@ layout: default
 mapboxgl.accessToken = 'pk.eyJ1IjoibHBvbGVwZWRkaSIsImEiOiJjazE1Z3c2MDkwdXY3M2h0Y2w2NWVuamlhIn0.fC-EAuhVfX3bTyEUEB0l8Q';
 
 let map = new mapboxgl.Map({
-  container: 'map', // container id
+  container: 'lmap', // container id
   style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
   center: [-81.1, 31.99], // starting position [lng, lat]
   zoom: 9.5 // starting zoom
