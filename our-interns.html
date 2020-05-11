@@ -1,0 +1,64 @@
+---
+layout: default
+title: Our Interns
+permalink: /our-interns/
+intern: blocks/intern-card.html
+---
+
+{% include header.html %}
+
+<div class="our-interns section">
+  <div class="container">
+
+    <h2>Our Interns</h2>
+    
+    <div class="row justify-content-md-center">
+      
+      {% include_relative {{ page.intern }}
+      
+        name="Firstname McLastname"
+      
+        src="../img/featured/the-need-for-more-information.jpg"
+      
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      %}
+      
+      {% include_relative {{ page.intern }}
+      
+        name="Firstname McLastname"
+      
+        src="../img/news/nichelle-stephens.jpg"
+      
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      %}
+
+    </div><!--end row 1-->
+    
+    <div class="row justify-content-md-center">
+      
+      {% include_relative {{ page.intern }}
+      
+        name="Firstname McLastname"
+      
+        src="../img/featured/the-need-for-more-information.jpg"
+      
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      %}
+      
+      {% include_relative {{ page.intern }}
+      
+        name="Firstname McLastname"
+      
+        src="../img/hero/dock.jpg"
+      
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      %}
+
+    </div><!--end row 2-->
+    
+  </div>
+  <!--end container-->
+</div>
+<!--end section-->
+
+{% include footer.html %}
