@@ -9,6 +9,15 @@ body {
   outline: 10px dashed #007bff;
 }
 
+*:active {
+  outline: none;
+}
+
+/* This styling is added only so that the focus outline is visible around the map canvas when selected by keyboard controls. */
+.mapboxgl-map {
+  overflow: visible;
+}
+
 .btn-cta,
 .btn-cta:hover {
   background: #002D59;
@@ -63,7 +72,7 @@ body {
   flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow: visible;
 }
 
 .header .nav ul {
@@ -104,7 +113,8 @@ body {
   padding-bottom: 4px;
 }
 
-@media (min-width: 768px) {
+/* 768 = 48em*/
+@media (min-width: 48em) {
   .header .logo {
     margin: 0;
   }
@@ -138,20 +148,24 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+/*768 = 48em when em = 16px*/
+@media screen and (max-width: 48em) {
   .header .hamburger {
     position: absolute;
     /* Vertical centering, 1/2 of height*/
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 577px) {
+/*992 = 62em*/
+/*576 = 36em*/
+@media screen and (max-width: 62em) and (min-width: 36.01em) {
   .header .hamburger {
     margin-right: 1em;
   }
 }
 
-@media screen and (min-width: 993px) {
+/*992 = 62em */
+@media screen and (min-width: 62.01em) {
   .header .hamburger {
     display: none;
   }
@@ -172,7 +186,8 @@ body {
   transition: opacity 1s;
 }
 
-@media screen and (max-width: 992px) {
+/* 992 = 62em */
+@media screen and (max-width: 62em) {
   .header.open .hamburger {
     right: 2em;
     position: fixed;

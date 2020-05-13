@@ -3,23 +3,28 @@
 const header = document.getElementById('headerOpen');
 const burger = document.getElementById('hamburgerButton');
 const dark = document.getElementById('darkOverlay');
+let burgerStyles;
 
 /* Helper method for checking if hamburger menu is open*/
 
 function ifMenuOpen() {
-  return header.classList.contains('open');
+  burgerStyles = window.getComputedStyle(burger);
+  let burgerDisplayed = burgerStyles.getPropertyValue('display');
+  return burgerDisplayed == 'none' || header.classList.contains('open');
 }
 function ifMenuClosed() {
-  return !header.classList.contains('open');
+  burgerStyles = window.getComputedStyle(burger);
+  let burgerDisplayed = burgerStyles.getPropertyValue('display');
+  return burger.style.display == 'none' || !header.classList.contains('open');
 }
 
 /* Updates all interactive aria labels */
 
 function updateAttributes() {
   makeFocusable('logo-link', ifMenuClosed);
-  makeFocusable('nav-link', ifMenuOpen);
+  makeFocusable('navlink', ifMenuOpen);
   updateAriaHidden('logo-link', ifMenuClosed);
-  updateAriaHidden('nav-link', ifMenuOpen);
+  updateAriaHidden('navlink', ifMenuOpen);
   updateHamburgerAria();
 }
 
