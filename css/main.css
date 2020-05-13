@@ -572,8 +572,13 @@ body {
   border: 2px solid #002D59;
 }
 
+.education .btn-cta {
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
 .education .btn-cta-secondary,
-.btn-cta-secondary:hover {
+.education .btn-cta-secondary:hover {
   border-radius: 2px;
   border: 2px solid #002D59;
   -webkit-box-shadow: 0 8px 16px rgba(0, 40, 91, 0.24);
