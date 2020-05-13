@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+*:focus {
+  outline: 10px dashed #007bff;
+}
+
 .btn-cta,
 .btn-cta:hover {
   background: #002D59;
