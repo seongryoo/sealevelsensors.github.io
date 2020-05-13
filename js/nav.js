@@ -10,7 +10,5 @@ function offNav() {
 }
 
 burger.addEventListener('click', flipNav);
-dark.addEventListener('click', flipNav);
+dark.addEventListener('click', offNav);
 window.addEventListener('resize', offNav);
-
-console.log('AHHHHHHHHHHHH');

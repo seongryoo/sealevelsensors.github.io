@@ -104,6 +104,10 @@ body {
   .header .logo {
     margin: 0;
   }
+  
+  .header.open .logo {
+    margin-left: 3em;
+  }
 
   .header .nav {
     display: -webkit-box;
@@ -158,7 +162,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
@@ -167,7 +171,7 @@ body {
 @media screen and (max-width: 992px) {
   .header.open .hamburger {
     right: 2em;
-    position: absolute;
+    position: fixed;
     z-index: 5;
     margin-top: -1em;
   }
@@ -213,7 +217,7 @@ body {
   }
 
   .header .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     z-index: 5;
@@ -404,6 +408,10 @@ body {
 
 .section.our-interns .card {
   margin-bottom: 32px;
+}
+
+.section.our-interns .card p {
+  margin-top: 8px;
 }
 
 .section .card p {
