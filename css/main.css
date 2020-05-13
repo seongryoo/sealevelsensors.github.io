@@ -117,7 +117,7 @@ body {
 }
 
 /*Header hamburger*/
-.header .hamburger a svg {
+.header .hamburger svg {
   width: 2em;
 }
 
