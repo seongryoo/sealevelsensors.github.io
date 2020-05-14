@@ -425,24 +425,27 @@ body {
   box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
 }
 
-.section.our-interns .card {
-  margin-bottom: 32px;
+
+.section .row.intern {
+  margin-bottom: 24px;
 }
 
-.section.our-interns .card p {
-  margin-top: 8px;
+.section .row.intern h4 {
+  margin-bottom: 8px;
 }
 
-.section .card p {
-  margin-bottom: 0;
+.section .row.intern p {
+  margin-bottom: 8px;
 }
 
-.section .intern .card .card-img-top {
-  height: 320px;
+.section .intern .intern-pic img {
+  height: 256px;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
+  padding-bottom: 24px;
 }
 
 .section .show-more {
