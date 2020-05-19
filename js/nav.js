@@ -51,7 +51,8 @@ function enterWrapper(func) {
     if (event.key == " " || event.key == "Spacebar") {
       event.preventDefault();
       func();
-    } else if (event.key == "ENTER") {
+    }
+    if (event.key == "Enter") {
       func();
     }
   }
