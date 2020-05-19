@@ -434,7 +434,7 @@ body {
 }
 
 .section .row.intern p {
-  margin-bottom: 8px;
+  margin-bottom: 28px;
 }
 
 .section .intern .intern-pic img {
@@ -444,12 +444,12 @@ body {
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 48em) {
   .section .intern .intern-pic img {
-    height: 320px;
+    height: 340px;
   }
 }
 
