@@ -11,7 +11,7 @@ function isMenuOpen() {
 }
 
 let strudelNav = strudel.query(isMenuOpen)
-  .watch('#hamburgerButton', 'display')
+  .watch('#hamburgerButton', 'style')
   .watch('#headerOpen', 'class')
 
   .reaction('.logo-link')
