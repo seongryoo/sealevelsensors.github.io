@@ -46,21 +46,8 @@ function offNav() {
   header.classList.remove('open');
 }
 
-function enterWrapper(func) {
-  return function(event) {
-    if (event.key == " " || event.key == "Spacebar") {
-      event.preventDefault();
-      func();
-    }
-    if (event.key == "Enter") {
-      func();
-    }
-  }
-}
-
 /* Clicking or pressing enter on burger will toggle nav */
-burger.addEventListener('click', flipNav);
-burger.addEventListener('keydown', enterWrapper(flipNav));
+strudel.clickPress('#hamburgerButton', flipNav);
 
 /* Clicking outside of navbar or changing window -> close nav*/
 dark.addEventListener('click', offNav);

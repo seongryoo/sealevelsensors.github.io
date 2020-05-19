@@ -2,26 +2,48 @@ function Strudel() {
   this.query = function (conditionFunction) {
     return new StrudelQuery(conditionFunction);
   };
-  
-  this.isAttr = function(selector, attribute, value) {
+
+  this.isAttr = function (selector, attribute, value) {
     let element = document.querySelectorAll(selector)[0];
     return element.getAttribute(attribute) == value;
-  }
-  
-  this.hasAttr = function(selector, attribute) {
+  };
+
+  this.hasAttr = function (selector, attribute) {
     let element = document.querySelectorAll(selector)[0];
     return element.hasAttribute(attribute);
-  }
-  
-  this.hasClass = function(selector, className) {
+  };
+
+  this.hasClass = function (selector, className) {
     let element = document.querySelectorAll(selector)[0];
     return element.classList.contains(className);
-  }
-  
-  this.isStyle = function(selector, style, value) {
+  };
+
+  this.isStyle = function (selector, style, value) {
     let element = document.querySelectorAll(selector)[0];
     return getComputedStyle(element)[style] == value;
-  }
+  };
+
+  this.clickPress = function (selector, callback) {
+    let elements = document.querySelectorAll(selector);
+    
+    for (let i = 0; i < elements.length; i++) {
+      let element = elements[i];
+      element.addEventListener('click', callback);
+      element.addEventListener('keydown', function (event) {
+
+        if (event.key == " " || event.key == "Spacebar") {
+          event.preventDefault();
+          callback();
+        }
+        if (event.key == "Enter") {
+          callback();
+        }
+        
+      });
+    }
+    
+  };
+  
 }
 
 const strudel = new Strudel();
