@@ -35,6 +35,7 @@ let strudelNav = strudel.query(isMenuOpen)
     .set('aria-label', 'Open hamburger menu')
     .set('aria-pressed', 'false');
 
+strudelNav.allReact();
 
 /* Handles actual toggling of header class */
 
