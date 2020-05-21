@@ -11,49 +11,73 @@ intern: blocks/intern-card.html
   <div class="container">
 
     <h2>Our Interns</h2>
+      <div class="row justify-content-md-center">
+        <div class="col-md-9">
+          <p>We are happy to introduce our class of 2020 interns who were selected through a rigorous application process.  This internship opportunity is in collaboration with the Global Change Program (GCP), the Center for Career Discovery &amp; Development (C2D2), and the Student Government Association (SGA).</p> 
+
+          <p>Our internships have generously been funded and supported by our Serve-Learn-Sustain (SLS) partner at the Georgia Institute of Technology.</p> 
+
+          <p>The Smart Sea Level Sensor internship will provide real-life experience to our interns to learn about climate change challenges and develop ideas on how to mitigate them.</p>
+
+          <p>You can find out more about our interns by clicking on their names or photos.</p>
+
+          <div class="row intern-row">
+            {% include_relative {{ page.intern }}
+            
+              link="/"
+
+              name="Alyson Laura"
+
+              src="../img/team/intern-alyson-laura.jpg"
+
+              desc="<p>Hudson Hill Community Profile Report Project</p>"
+            %}
+
+            {% include_relative {{ page.intern }}
+
+              link="/"
+            
+              name="Patrick Daugherty"
+
+              src="../img/team/intern-patrick-daugherty.jpg"
+
+              desc=
+
+              "<p>Neighborhood Emergency Response &amp; Prepardeness Project</p>"
+            %}  
+          </div>
+
+          <div class="row intern-row">
+            {% include_relative {{ page.intern }}
+
+              link="/"
+            
+              name="Kaylyn Sinisgalli"
+
+              src="../img/team/intern-kaylyn-sinisgalli.jpg"
+
+              desc=
+              "<p>Emergency Management Portal (CEMA) Development Project</p>"
+            %}
+
+            {% include_relative {{ page.intern }}
+
+              link="/"
+            
+              name="Benjamin Vaisberg"
+
+              src="../img/team/intern-benjamin-vaisberg.png"
+
+              desc="<p>Chatham County Air Quality Sensor Project</p>"
+            %}
+          </div>
       
-      {% include_relative {{ page.intern }}
-      
-        name="Alyson Laura"
-      
-        src="../img/team/intern-alyson-laura.jpg"
-      
-        desc="<p>&ldquo;As a student of public policy, I am looking forward to making policy work for people by engaging with a real community and crafting an Emergency Preparedness &amp; Response Plan that works for the residents of Hudson Hill.&rdquo; </p>"
-      %}
-      
-      {% include_relative {{ page.intern }}
-      
-        name="Benjamin Vaisberg"
-      
-        src="../img/team/intern-benjamin-vaisberg.png"
-      
-        desc="<p>&ldquo;Being raised in Miami, Florida I’m aware of the reality of sea level rise and I’m excited to be part of a project that is working to help people along the US coast stay safe from these dangers.&rdquo;</p>"
-      %}
-      
-      {% include_relative {{ page.intern }}
-      
-        name="Kaylyn Sinisgalli"
-      
-        src="../img/team/intern-kaylyn-sinisgalli.jpg"
-      
-        desc=
-        "<p>&ldquo;My name is Kaylyn Sinisgalli. I’m a fourth-year (now fifth-year!) BS/MS Environmental Engineering student with a Spanish minor and I will be interning on the SMART Sea Level Sensors project this summer with Dr. Clark.&rdquo;</p>
     
-        <p>&ldquo;The team has done an incredible engaging and involving the local community with the project – I’m excited to be a part of this project so I can too learn how to seamlessly integrate engineering projects into communities to create positive change. I’m looking forward working on the community-created push for air quality sensors this summer!&rdquo;</p>"
-      %}
-      
-      {% include_relative {{ page.intern }}
-      
-        name="Patrick Daugherty"
-      
-        src="../img/team/intern-patrick-daugherty.jpg"
-      
-        desc=
-    
-        "<p>&ldquo;I heard about the Sea Level Sensor project for a few years ago and I have wanted to get involved ever since. I am a Savannah native and I care deeply about Savannah so it's very fulfilling to be a part of a project that could be used to understand how sea level rise will affect the city and it's residents, especially my friends and family who would all be directly affected by sea level rise in the area.&rdquo;</p> 
-    
-        <p>&ldquo;Additionally, I am excited to gain an increased understanding through this internship of where I want to take my career and my post-undergraduate education because I am interested in coastal engineering and storm water design.&rdquo;</p>"
-      %}
+        </div>
+        <!--end 9-column-->
+        
+      </div>
+      <!--end row-->
     
   </div>
   <!--end container-->

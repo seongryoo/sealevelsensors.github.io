@@ -424,35 +424,47 @@ body {
   box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
 }
 
-
-.section .row.intern {
-  margin-bottom: 24px;
+.section.our-interns .row.intern-row {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
-.section .row.intern h4 {
-  margin-bottom: 8px;
+.section.our-interns .row.intern-row .intern {
+  padding-bottom: 32px;
 }
 
-.section .row.intern p {
-  margin-bottom: 28px;
+.section.our-interns .card {
+  height: 100%;
 }
 
-.section .intern .intern-pic img {
-  height: 256px;
-  width: 100%;
+.section.our-interns .card p {
+  margin-top: 8px;
+}
+
+.section .card p {
+  margin-bottom: 0;
+}
+
+.section .intern .card .card-img-top {
+  height: 330px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
-  margin-bottom: 24px;
 }
 
-@media screen and (max-width: 48em) {
-  .section .intern .intern-pic img {
-    height: 340px;
+@media screen and (max-width: 62em) and (min-width: 48em) {
+  .section .intern .card .card-img-top {
+    height: 240px;
   }
 }
 
+@media screen and (max-width: 48em) {
+  .section .intern .card .card-img-top {
+    height: 340px;
+  }
+}
 .section .show-more {
   margin-top: 56px;
   text-align: center;

@@ -5,12 +5,17 @@ const burger = document.getElementById('hamburgerButton');
 const dark = document.getElementById('darkOverlay');
 let burgerStyles;
 
-function isMenuOpen() {
+function isNavVisible() {
   return strudel.isStyle('#hamburgerButton', 'display', 'none') ||
          strudel.hasClass('#headerOpen', 'open');
 }
 
-let strudelNav = strudel.query(isMenuOpen)
+function isMenuOpen() {
+  return !strudel.isStyle('#hamburgerButton', 'display', 'none') &&
+         strudel.hasClass('#headerOpen', 'open');
+}
+
+let strudelLogo = strudel.query(isMenuOpen)
   .watch('#hamburgerButton', 'style')
   .watch('#headerOpen', 'class')
 
@@ -19,7 +24,11 @@ let strudelNav = strudel.query(isMenuOpen)
     .set('aria-hidden', true)
       .else()
     .set('tabIndex', 0)
-    .remove('aria-hidden')
+    .remove('aria-hidden');
+
+let strudelNav = strudel.query(isNavVisible)
+  .watch('#hamburgerButton', 'style')
+  .watch('#headerOpen', 'class')
 
   .reaction('.navlink')
     .set('tabIndex', 0)
@@ -36,6 +45,7 @@ let strudelNav = strudel.query(isMenuOpen)
     .set('aria-pressed', 'false');
 
 strudelNav.allReact();
+strudelLogo.allReact();
 
 /* Handles actual toggling of header class */
 

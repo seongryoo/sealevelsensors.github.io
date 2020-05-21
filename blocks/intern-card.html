@@ -1,12 +1,9 @@
-<div class="row intern">
-  <div class="col-md-4 intern-pic">
-    <img class="intern-img" 
-         src="{{ include.src }}" 
-         alt="{{ include.name }}">
-  </div>
-
-  <div class="col-md-8 intern-text">
-    <h4>{{ include.name  }}</h4>
-    {{ include.desc }}
-  </div>
+<div class="col-md-6 intern">
+  <a class="card" href="{{ include.link }}">
+    <img class="card-img-top" src="{{ include.src }}" alt="{{ include.name }}">
+    <div class="card-body">
+      <h4 class="card-title">{{ include.name }}</h4>
+      <p>{{ include.desc }}</p>
+    </div>
+  </a>
 </div>
