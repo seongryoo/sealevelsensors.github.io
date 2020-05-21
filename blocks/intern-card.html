@@ -1,9 +1,15 @@
 <div class="col-md-6 intern">
-  <a class="card" href="{{ include.link }}">
-    <img class="card-img-top" src="{{ include.src }}" alt="{{ include.name }}">
+  <div class="card">
+    <a href="{{ include.link }}" aria-label="Open a new page to learn more about {{ include.name }}">
+      <img class="card-img-top" src="{{ include.src }}" alt="Picture of {{ include.name }}">
+    </a>
     <div class="card-body">
       <h4 class="card-title">{{ include.name }}</h4>
       <p>{{ include.desc }}</p>
+      <p>
+        <a href="{{ include.link }}" aria-label="Open a new page to learn more about {{ include.name }}">Read more</a>
+      </p>
+      
     </div>
-  </a>
+  </div>
 </div>
