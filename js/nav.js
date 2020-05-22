@@ -40,9 +40,11 @@ let strudelNav = strudel.query(isNavVisible)
   .reaction('#hamburgerButton')
     .set('aria-label', 'Close hamburger menu')
     .set('aria-pressed', 'true')
+    .set('aria-expanded', 'true')
       .else()
     .set('aria-label', 'Open hamburger menu')
-    .set('aria-pressed', 'false');
+    .set('aria-pressed', 'false')
+    .set('aria-expanded', 'false');
 
 strudelNav.allReact();
 strudelLogo.allReact();
