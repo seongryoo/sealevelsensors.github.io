@@ -47,9 +47,9 @@ let strudelNav = strudel.query(isNavVisible)
     .set('aria-expanded', 'false')
 
   .reaction('#navbar')
-    .set('aria-label', 'Primary')
+    .set('aria-label', 'Primary menu')
       .else()
-    .set('aria-label', 'Collapsed primary');
+    .set('aria-label', 'Collapsed primary menu');
 
 strudelNav.allReact();
 strudelLogo.allReact();
