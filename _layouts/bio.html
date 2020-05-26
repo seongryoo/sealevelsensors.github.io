@@ -4,43 +4,44 @@ layout: default
 
 {% include header.html %}
 
-<div class="section bio" role="main">
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-9">
+<main>
+  <div class="section bio">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-9">
 
-        <p role="navigation" aria-label="Breadcrumbs">
-          <a href="{{ page.backUrl }}" class="back-link">
-            <span aria-hidden="true">&#10094; </span>
-            {{ page.back }}
-          </a>
-        </p>
-        
-        <h3>{{ page.fullName }}</h3>
-        <p class="bio-caption">{{ page.caption }}</p>
-        <div class="row img-row">
+          <p role="navigation" aria-label="Breadcrumbs">
+            <a href="{{ page.backUrl }}" class="back-link">
+              <span aria-hidden="true">&#10094; </span>
+              {{ page.back }}
+            </a>
+          </p>
 
-          <div class="col-md-4 vertically-centered">
-            <img class="bio-img" src="{{ page.src }}" alt="{{ page.fullName }}">
-          </div>
+          <h3>{{ page.fullName }}</h3>
+          <p class="bio-caption">{{ page.caption }}</p>
+          <div class="row img-row">
 
-          <div class="col-md-8 vertically-centered">
-            <div class="card bio-quote" role="blockquote">
-              <div class="card-body">
-                <p class="quote-text">{{ page.desc }}</p>
+            <div class="col-md-4 vertically-centered">
+              <img class="bio-img" src="{{ page.src }}" alt="{{ page.fullName }}">
+            </div>
+
+            <div class="col-md-8 vertically-centered">
+              <div class="card bio-quote" role="blockquote">
+                <div class="card-body">
+                  <p class="quote-text">{{ page.desc }}</p>
+                </div>
               </div>
             </div>
+
           </div>
 
+
+
+          {{ content }}
+
         </div>
-
-
-
-        {{ content }}
-
       </div>
     </div>
   </div>
-</div>
-
+</main>
 {% include footer.html %}
