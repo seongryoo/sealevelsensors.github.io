@@ -6,82 +6,83 @@ intern: blocks/intern-card.html
 ---
 
 {% include header.html %}
+<main>
+  <div class="our-interns section">
+    <div class="container">
 
-<div class="our-interns section" role="main">
-  <div class="container">
+      <h2>Interns</h2>
+        <div class="row justify-content-md-center">
+          <div class="col-md-9">
+            <p>We are happy to introduce our class of 2020 interns who were selected through a rigorous application process.  This internship opportunity is in collaboration with the <a href="https://globalchange.gatech.edu/" aria-label="Global Change Program at Georgia Tech">Global Change Program (GCP)</a> and the <a href="https://career.gatech.edu/" aria-label="Center for Career Discovery and Development at Georgia Tech">Center for Career Discovery &amp; Development (C2D2)</a>. This internship has also been in partnership with the <a href="http://ipat.gatech.edu/" aria-label="Institute for People and Technology at Georgia Tech">Institute for People and Technology (IPaT)</a>.
 
-    <h2>Interns</h2>
-      <div class="row justify-content-md-center">
-        <div class="col-md-9">
-          <p>We are happy to introduce our class of 2020 interns who were selected through a rigorous application process.  This internship opportunity is in collaboration with the <a href="https://globalchange.gatech.edu/" aria-label="Global Change Program at Georgia Tech">Global Change Program (GCP)</a> and the <a href="https://career.gatech.edu/" aria-label="Center for Career Discovery and Development at Georgia Tech">Center for Career Discovery &amp; Development (C2D2)</a>. This internship has also been in partnership with the <a href="http://ipat.gatech.edu/" aria-label="Institute for People and Technology at Georgia Tech">Institute for People and Technology (IPaT)</a>.
+            <p>Our internships have generously been funded and supported by our <a href="https://serve-learn-sustain.gatech.edu/" aria-label="Serve Learn Sustain program at Georgia Tech">Serve-Learn-Sustain (SLS) partner</a> at the Georgia Institute of Technology, through their <a href="https://serve-learn-sustain.gatech.edu/sls-internship" aria-label="Summer Internship at Serve Learn Sustain">Summer Internship Program</a>.</p> 
 
-          <p>Our internships have generously been funded and supported by our <a href="https://serve-learn-sustain.gatech.edu/" aria-label="Serve Learn Sustain program at Georgia Tech">Serve-Learn-Sustain (SLS) partner</a> at the Georgia Institute of Technology, through their <a href="https://serve-learn-sustain.gatech.edu/sls-internship" aria-label="Summer Internship at Serve Learn Sustain">Summer Internship Program</a>.</p> 
+            <p>The Smart Sea Level Sensor internship will provide real-life experience to our interns to learn about climate change challenges and develop ideas on how to mitigate them.</p>
 
-          <p>The Smart Sea Level Sensor internship will provide real-life experience to our interns to learn about climate change challenges and develop ideas on how to mitigate them.</p>
+            <p>You can find out more about our interns by clicking on their photos.</p>
 
-          <p>You can find out more about our interns by clicking on their photos.</p>
+            <div class="row intern-row">
+              {% include_relative {{ page.intern }}
 
-          <div class="row intern-row">
-            {% include_relative {{ page.intern }}
-            
-              link="/interns/alyson-laura"
+                link="/interns/alyson-laura"
 
-              name="Alyson Laura"
+                name="Alyson Laura"
 
-              src="../img/team/intern-alyson-laura.jpg"
+                src="../img/team/intern-alyson-laura.jpg"
 
-              desc="<p>Neighborhood Emergency Response &amp; Preparedness Project</p>"
-            %}
+                desc="<p>Neighborhood Emergency Response &amp; Preparedness Project</p>"
+              %}
 
-            {% include_relative {{ page.intern }}
+              {% include_relative {{ page.intern }}
 
-              link="/interns/patrick-daugherty"
-            
-              name="Patrick Daugherty"
+                link="/interns/patrick-daugherty"
 
-              src="../img/team/intern-patrick-daugherty.jpg"
+                name="Patrick Daugherty"
 
-              desc=
+                src="../img/team/intern-patrick-daugherty.jpg"
 
-              "<p>Hudson Hill Community Profile Report Project</p>"
-            %}  
+                desc=
+
+                "<p>Hudson Hill Community Profile Report Project</p>"
+              %}  
+            </div>
+
+            <div class="row intern-row">
+              {% include_relative {{ page.intern }}
+
+                link="/interns/kaylyn-sinisgalli"
+
+                name="Kaylyn Sinisgalli"
+
+                src="../img/team/intern-kaylyn-sinisgalli.jpg"
+
+                desc=
+                "<p>Chatham County Air Quality Sensor Project</p>"
+              %}
+
+              {% include_relative {{ page.intern }}
+
+                link="/interns/benjamin-vaisberg"
+
+                name="Benjamin Vaisberg"
+
+                src="../img/team/intern-benjamin-vaisberg.jpg"
+
+                desc="<p>Emergency Management Portal (CEMA) Development Project</p>"
+              %}
+            </div>
+
+
           </div>
+          <!--end 9-column-->
 
-          <div class="row intern-row">
-            {% include_relative {{ page.intern }}
-
-              link="/interns/kaylyn-sinisgalli"
-            
-              name="Kaylyn Sinisgalli"
-
-              src="../img/team/intern-kaylyn-sinisgalli.jpg"
-
-              desc=
-              "<p>Chatham County Air Quality Sensor Project</p>"
-            %}
-
-            {% include_relative {{ page.intern }}
-
-              link="/interns/benjamin-vaisberg"
-            
-              name="Benjamin Vaisberg"
-
-              src="../img/team/intern-benjamin-vaisberg.jpg"
-
-              desc="<p>Emergency Management Portal (CEMA) Development Project</p>"
-            %}
-          </div>
-      
-    
         </div>
-        <!--end 9-column-->
-        
-      </div>
-      <!--end row-->
-    
+        <!--end row-->
+
+    </div>
+    <!--end container-->
   </div>
-  <!--end container-->
-</div>
-<!--end section-->
+  <!--end section-->
+</main>
 
 {% include footer.html %}

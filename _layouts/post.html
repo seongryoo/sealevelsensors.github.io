@@ -4,28 +4,29 @@ layout: default
 
 {% include header.html %}
 
-<main>
-  <div class="post section">
-    <div class="container">
-      <div class="row">
-        <div class="recap col-md-8" role="main">
+<div class="post section">
+  <div class="container">
+    <div class="row">
+
+      <main class="col-md-8">
+        <div class="recap">
           <h2>{{ page.title }}</h2>
           {{ page.content }}
         </div>
+      </main>
 
-        {% if page.documents %}
-        <div class="documents col-md-4" role="complementary" aria-label="Related documents">
-          <h2>Documents</h2>
-          <ul>
-            {% for document in page.documents %}
-              <li><a href="{{ document.link }}" target="_blank">{{ document.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
+      {% if page.documents %}
+      <aside class="documents col-md-4" aria-label="Related documents">
+        <h2>Documents</h2>
+        <ul>
+          {% for document in page.documents %}
+            <li><a href="{{ document.link }}" target="_blank">{{ document.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+      {% endif %}
     </div>
   </div>
-</main>
+</div>
 
 {% include footer.html %}

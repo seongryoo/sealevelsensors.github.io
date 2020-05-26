@@ -6,7 +6,7 @@
        role="button" 
        aria-label="Open hamburger menu" 
        class="hamburger" id="hamburgerButton"
-       aria-haspopup="true"
+       aria-haspopup="menu"
        aria-controls="navbar"
        
        aria-pressed="false" 
@@ -25,8 +25,8 @@
       <a href="/" tabindex="0" class="logo-link"><img src="/img/logo.png" alt="Smart Sea Level Sensors Logo"></a>
     </div>
 
-    <nav class="nav" id="navbar" aria-label="Primary">
-      <ul>
+    <nav class="nav" aria-label="Primary menu">
+      <ul role="menu" id="navbar">
         <li>
           <a tabindex="0" class="navlink" href="/about/">About</a>
         </li>
@@ -47,7 +47,7 @@
       </ul>
     </nav>
 
-    <div class="dark-overlay" id="darkOverlay"></div>
+    <div class="dark-overlay" id="darkOverlay" aria-hidden="true"></div>
 
   </div>
 </header>
