@@ -13,6 +13,22 @@ body {
   outline: none;
 }
 
+p a  {
+  color: #175088;
+  background-color: transparent;
+  border-bottom: 3px solid #c1d3ff;
+  text-decoration: none;
+  -webkit-transition: background 0.1s, color 0.1s, border-bottom 0.1s;
+  transition: background 0.1s, color 0.1s, border-bottom 0.1s;
+}
+
+p a:hover,
+p a:focus {
+  background: #5095d954;
+  color: black;
+  border-bottom: 5px solid #175088;
+}
+
 /* This styling is added only so that the focus outline is visible around the map canvas when selected by keyboard controls. */
 .mapboxgl-map {
   overflow: visible;
@@ -844,6 +860,10 @@ img.bio-img {
   content: '\201D';
 }
 .section.bio .back-link {
-  margin-bottom: 24px;
-  display: inline-block;
+  display: inline;
+  padding: 4px 0;
+}
+
+.breadcrumbs {
+  margin-bottom: 28px;
 }
