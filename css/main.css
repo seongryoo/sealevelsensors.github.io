@@ -867,3 +867,13 @@ img.bio-img {
 .breadcrumbs {
   margin-bottom: 28px;
 }
+
+/* Skip to content */
+.skip-to-content {
+  width: 100%;
+  position: absolute;
+  height: 10em;
+  color: #1E2832;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+}
