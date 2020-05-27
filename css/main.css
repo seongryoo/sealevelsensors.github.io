@@ -27,6 +27,7 @@ p a:focus {
   background: #5095d954;
   color: black;
   border-bottom: 5px solid #175088;
+  outline: none;
 }
 
 /* This styling is added only so that the focus outline is visible around the map canvas when selected by keyboard controls. */
