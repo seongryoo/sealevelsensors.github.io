@@ -15,12 +15,17 @@
        
        aria-pressed="false" 
        aria-expanded="false">
-      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" alt="Hamburger menu icon">
-        <defs />
+      <svg viewBox="0 0 400 400" 
+           xmlns="http://www.w3.org/2000/svg" 
+           alt="Hamburger menu icon" 
+           aria-labelled-by="title desc"
+           role="img">
+        <title>Hamburger Menu Icon</title>
+        <desc>Press enter or space to expand the primary menu.</desc>
         <g>
-          <path class="bar-1" d="M40 40h320v80H40z"></path>
-          <path class="bar-2" d="M40 160h320v80H40z"></path>
-          <path class="bar-3" d="M40 280h320v80H40z"></path>
+          <path class="bar-1" d="M40 40h320v80H40z" role="presentation"></path>
+          <path class="bar-2" d="M40 160h320v80H40z" role="presentation"></path>
+          <path class="bar-3" d="M40 280h320v80H40z" role="presentation"></path>
         </g>
       </svg>
     </a>
